@@ -1,13 +1,18 @@
-streamlit
-openai
-anthropic
-google-generativeai
-pyyaml
-pandas
-numpy
-pypdf
-PyYAML
-altair
-httpx
-python-docx
-reportlab
+# Core Web Application Framework
+streamlit>=1.35.0
+
+# Data Manipulation & Analytical Engine
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Interactive Visualization & GIS Layouts
+plotly>=5.18.0
+
+# AI Foundation Model Orchestration (Gemini & OpenAI ecosystem)
+google-genai>=0.1.0
+google-generativeai>=0.8.0
+openai>=1.30.0
+
+# Security & Serialization Dependencies
+cryptography>=42.0.0
+pydantic>=2.7.0
