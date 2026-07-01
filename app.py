@@ -1495,19 +1495,19 @@ def module_distribution_dataset():
     # Graphs
     st.markdown("### Graph 1 — GIS Distribution Network Chain")
     fig1 = graph_gis_chain(filtered)
-    st.plotly_chart(fig1, use_container_width=True)
+    st.plotly_chart(fig1, use_container_width=True, key="graph1_gischain_chart")
 
     st.markdown("### Graph 2 — Supply Chain Sankey")
     fig2 = graph_sankey(filtered)
-    st.plotly_chart(fig2, use_container_width=True)
+    st.plotly_chart(fig2, use_container_width=True, key="graph2_supplychain_chart")
 
     st.markdown("### Graph 3 — Network Graph (Hub-like)")
     fig3 = graph_network(filtered)
-    st.plotly_chart(fig3, use_container_width=True)
+    st.plotly_chart(fig3, use_container_width=True, key="graph3_network_chart")
 
     st.markdown("### Graph 4 — Time Series & Lag View")
     fig4 = graph_time_series_lag(filtered)
-    st.plotly_chart(fig4, use_container_width=True)
+    st.plotly_chart(fig4, use_container_width=True, key="graph4_timeseries_chart")
     # Render extra histogram if present
     extra = getattr(fig4, "_a7_extra_hist", None)
     if extra is not None:
@@ -1515,11 +1515,11 @@ def module_distribution_dataset():
 
     st.markdown("### Graph 5 — Heatmap (Supplier × Customer)")
     fig5 = graph_heatmap(filtered)
-    st.plotly_chart(fig5, use_container_width=True)
+    st.plotly_chart(fig5, use_container_width=True, key="graph5_heatmap_chart")
 
     st.markdown("### Graph 6 — Pareto (Top Suppliers)")
     fig6 = graph_pareto(filtered)
-    st.plotly_chart(fig6, use_container_width=True)
+    st.plotly_chart(fig6, use_container_width=True, key="graph6_pareto_chart")
 
     st.markdown("<hr class='a7-hr'/>", unsafe_allow_html=True)
 
